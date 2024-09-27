@@ -1,0 +1,73 @@
+*{
+    margin:0;/*retira margen por defecto*/
+    padding:0; /*retirar margen interno */
+    --color1:#F2D027;
+    --color2:#403501;
+    --color3:#0D0D0D;
+    --color4:#F2F2F2;
+    --color5:#BF705E;
+}
+body{
+    background-image: url("imagenes/sw_fondo.jpg");
+}
+img{
+    max-width: 100%;/*limita la dimension de la imagen con respecto A SU PADRE*/
+    display: block;
+    margin:auto; /*retira margen por defecto*/
+}
+#contenedor{
+    border:3px solid white;
+    width:90%;
+    margin:20px auto; /*retira margen por defecto*/
+}
+#encabezado{
+    border:1px solid white;
+    display:flex;
+    flex-direction: row; /* ALINEAMIENTO VERTICAL CON FLEX*/
+    align-items: center;
+    justify-content: space-between;
+}
+#contenido{
+    display: flex;
+    flex-direction: row; /* ALINEAMIENTO VERTICAL CON FLEX*/
+    justify-content: space-around;
+   
+    padding:10px; /*relleno*/
+    margin:10px;
+}
+.episodio{
+    width:30%;
+    padding: 20px; /*relleno*/
+    border:1px solid yellow
+}
+#pie{
+    border:1px solid white;
+    text-align: center;
+}
+h1,h2,h3{
+    color:var(--color1);
+    padding: 20px;  /*relleno*/
+    text-align: center;
+    font-family: "Rammetto One", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+h2{
+    color: var(--color1);
+}
+p{
+    text-align: justify;
+    color:var(--color4);
+    font-family: "Rammetto One", sans-serif;
+}
+a{
+    color:var(--color4)
+}
+hr{
+    color:red;
+    margin:10px;
+}
